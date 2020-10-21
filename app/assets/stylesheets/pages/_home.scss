@@ -1,6 +1,5 @@
-
 .container-background {
-  background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.3)),asset-url('Portfolio-picture.JPG');
+  background-image: radial-gradient(transparent, transparent, black), linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.3)),asset-url('Portfolio-picture.JPG');
   height: 100vh;
   background-size: cover;
 }

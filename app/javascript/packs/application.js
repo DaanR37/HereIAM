@@ -22,6 +22,18 @@ require("channels")
 // WRITE YOUR OWN JS STARTING FROM HERE 👇
 // ----------------------------------------------------
 
+const navScroll = document.querySelector(".navbar-lewagon");
+window.onscroll = function () {
+  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    navScroll.classList.add("nav-colored");
+    navScroll.classList.remove("nav-transparent");
+  }
+  else {
+    navScroll.classList.add("nav-transparent");
+    navScroll.classList.remove("nav-colored");
+  }
+};
+
 // External imports
 import "bootstrap";
 
@@ -29,6 +41,8 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
+  navScroll();
   // Call your functions here, e.g:
   // initSelect2();
 });
+
